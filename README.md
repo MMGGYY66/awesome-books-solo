@@ -91,9 +91,11 @@ To get a local copy up and running follow these simple example steps.
 
 ### Install
 
-- npm install --save-dev hint@6.x
-- npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
-- pm install --save-dev eslint  eslint-config-airbnb-base  eslint-plugin-import  babel-eslint
+- npm install --save-dev hint
+
+- npm install --save-dev stylelint stylelint-scss stylelint-config-standard stylelint-csstree-validator
+
+- npm install --save-dev eslint  eslint-config-airbnb-base  eslint-plugin-import  babel-eslint
 
 ## Requirements
 
@@ -128,12 +130,6 @@ For stylelint error run:<code>sudo npx stylelint "\*_/_.{css,scss}" --fix</code>
 - Twitter: [twitter](https://twitter.com/MOHAMEDELDIMARd)
 - Facebook: [facebook](https://www.facebook.com/MOHAMED.ELDIMARDASH/)
 
-👥 Henschel Nketchogue M.
-
-- GitHub: [miltonHenschel](https://github.com/miltonHenschel)
-- LinkedIn: [henschelnketchoguem](https://www.linkedin.com/in/henschelnketchoguem/)
-- Twitter: [nketchogue](https://twitter.com/nketchogue)
-- Instagram: [mpatchiehenschel](https://www.instagram.com/mpatchiehenschel/)
 
   <!-- CONTRIBUTING -->
   <p align="right">(<a href="#readme-top">back to top</a>)</p>
