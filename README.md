@@ -50,10 +50,14 @@
 
 # creating my-awesome-books:
 
-- I will set up a new repository and prepare it for development using best practices (e.g. linters).
-- for the first project, I will Manage books collection (plain JS with objects).
-  How to build the "Awesome books" website
-- I will start by building the core functionalities and ignoring how my website looks. Note that it is plain HTML with no styling, but it will allow you to add and remove books from the list!
+Re-create my Awesome books app following the rules:
+
+    Use ES6 syntax.
+    Divide my code into modules. Save each module in a separate file in the modules dir. Import modules in the index.js file. For this exercise
+    Keep all funcionalities of the app without errors.
+    Refactor my methods and functions to arrow functions.
+    Use let and const in a correct way.
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
