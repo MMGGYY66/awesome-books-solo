@@ -11,7 +11,7 @@ class BookObject {
     this.id = id;
   }
 
-  static displayBooks = () => {
+  static displayBooks = ()=>{
     collection.innerHTML = '';
     id = JSON.parse(localStorage.getItem('maxID'));
     const keys = Object.keys(localStorage);
