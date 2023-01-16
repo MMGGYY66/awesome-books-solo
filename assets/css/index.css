@@ -1,198 +1,309 @@
 * {
-  border: 0;
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 body {
-  text-align: center;
-  background: url("../images/books1.jpg") no-repeat center;
-  background-size: cover;
-  object-fit: cover;
-  height: 100vh;
-  opacity: 0.4;
-  color: black;
+	text-align: center;
+	background: url("../images/books1.jpg") no-repeat center;
+	background-size: cover;
+	object-fit: cover;
+	height: 100vh;
+	opacity: 0.4;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-y: scroll;
+}
+
+/* Header Section */
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	border: 3px solid black;
+	padding: 1rem 0.5rem;
+	width: 100%;
 }
 
 .main-container {
-  max-width: 700px;
-  margin: 100px auto;
-  background: rgb(255 255 255 / 90%);
-  border-radius: 20px;
+	width: 70%;
+	margin: 24px auto;
+	background: rgb(255 255 255 / 90%);
+	border-radius: 20px;
 }
 
 h1,
 h2 {
-  width: 60%;
-  padding: 2.1rem 1rem 0.7rem;
-  margin: 0 auto;
-  font-size: 32px;
-  text-align: center;
-  border-bottom: 2px solid gray;
+	width: 60%;
+	padding: 2.1rem 1rem 0.7rem;
+	margin: 0 auto;
+	font-size: 32px;
+	text-align: center;
+	border-bottom: 2px solid gray;
+}
+
+.active {
+	display: block;
 }
 
 .logo-container {
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  padding: 13px;
-  margin: 0;
-  gap: 0;
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	padding: 13px;
+	margin: 0;
+	gap: 0;
 }
 
 .hr {
-  margin-bottom: 2rem;
+	margin-bottom: 2rem;
+}
+
+.linkBtn {
+	text-decoration: none;
+	border: none;
+	box-shadow: none;
+	cursor: pointer;
 }
 
 form {
-  width: fit-content;
-  margin: 0 auto;
-  text-align: end;
-  object-fit: cover;
-}
-
-#book-list {
-  display: block;
-  text-align: center;
-  justify-items: center;
-  border: 2px solid gray;
-  flex-direction: column;
-  overflow: scroll;
-  object-fit: cover;
+	width: fit-content;
+	margin: 0 auto;
+	text-align: end;
+	object-fit: cover;
 }
 
 .book-list-container {
-  display: block;
-  margin: 0 auto;
+	display: block;
+	width: 90%;
+	margin: 1rem 2rem 0;
+	text-align: center;
+	color: black;
+}
+
+#book-list {
+	display: block;
+	text-align: center;
+	justify-items: center;
+	border: 2px solid gray;
+	flex-direction: column;
+	overflow: scroll;
+	object-fit: cover;
+}
+
+.collection div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
+	height: 40px;
+}
+
+.collection div:nth-child(even) {
+	background-color: white;
+}
+
+.collection div:nth-child(even):hover {
+	background-color: #05eda4;
+}
+
+.collection div:nth-child(odd) {
+	background-color: #c6c6c6;
+}
+
+.collection div:nth-child(odd):hover {
+	background-color: #f00;
+  color: white;
+}
+
+.collection p {
+	margin: auto 0 auto 10px;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px;
 }
 
 input {
-  margin-bottom: 10px;
-  width: 350px;
-  padding: 5px;
-  border: 2px solid saddlebrown;
-  font-size: 24px;
-  font-weight: 700;
-  border-radius: 16px;
+	margin-bottom: 10px;
+	width: 350px;
+	padding: 5px;
+	border: 2px solid saddlebrown;
+	font-size: 24px;
+	font-weight: 700;
+	border-radius: 16px;
+}
+
+.collection button {
+	margin: auto 0;
+	border-radius: 12px;
+	white: 77px;
+}
+
+.collection button:hover {
+	background: black;
+	color: wheat;
+}
+
+.line {
+	margin-top: 20px;
+	height: 3px;
+	width: 200px;
+	background-color: black;
 }
 
 span {
-  margin: 0 10px;
+	margin: 0 10px;
 }
 
 .bookList1 {
-  display: flex;
-  position: relative;
-  margin: 16px 12px;
-  border: 0;
-  padding: 20px;
-  outline: none;
-  border-radius: 20px;
+	display: flex;
+	position: relative;
+	margin: 16px 12px;
+	border: 0;
+	padding: 20px;
+	outline: none;
+	border-radius: 20px;
 }
 
-p.bookTitle,
-p.bookAuthor {
-  font-size: 24px;
+.bookTitle p,
+.bookAuthor p {
+	font-size: 24px;
 }
 
-.bookList1:nth-child(even) {
-  background: #ddd;
-}
-
-.bookList1:nth-child(odd) {
-  background: #aaa;
-}
 
 .remove {
-  position: absolute;
-  right: 20px;
-  top: 20%;
-  font-size: 20px;
-  font-weight: bold;
-  border-radius: 12px;
+	position: absolute;
+	right: 20px;
+	top: 20%;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 12px;
 }
 
 button {
-  padding: 5px;
-  font-size: 20px;
-  font-weight: bold;
+	padding: 5px;
+	font-size: 20px;
+	font-weight: bold;
 }
 
 /* nav */
 nav {
-  display: flex;
-  justify-content: start;
-  border: 2px solid gray;
-  padding: 0 10px;
-  align-items: center;
-  font-size: large;
-  font-weight: bold;
+	display: flex;
+	justify-content: start;
+	padding: 0 10px;
+	align-items: center;
+	font-size: large;
+	font-weight: bold;
 }
 
 .logo-text {
-  margin: 0 104px 0 6px;
-  padding: 0;
-  font-weight: 600;
-  font-size: 20px;
+	margin: 0 264px 0 6px;
+	padding: 0;
+	font-weight: 600;
+	font-size: 20px;
 }
 
 nav ul {
-  display: flex;
+	display: flex;
+	align-items: center;
 }
 
 nav ul li {
-  list-style: none;
-  margin-left: 10px;
-  border-right: 2px solid gray;
-  padding: 4px 0;
-  padding-right: 10px;
-  cursor: pointer;
-  text-decoration: none;
+	list-style: none;
+	margin-left: 10px;
+	border-right: 2px solid gray;
+	padding: 4px 0;
+	padding-right: 10px;
+	cursor: pointer;
+	text-decoration: none;
 }
 
 a {
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
 }
 
 .contact-info p,
 .contact-info li {
-  text-align: start;
+	text-align: start;
 }
 
 nav li:hover {
-  color: blue;
-}
-
-.contact-info {
-  border: none;
-  padding: 16px 34px;
-  font-size: large;
-  align-items: center;
-  justify-items: center;
-  justify-content: center;
-}
-
-.contact-info ul {
-  margin: 12px 32px;
+	color: blue;
 }
 
 .form-container {
   display: none;
 }
 
+/* Contact Section */
+.contact-info {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  	font-size: large;
+	border: none;
+
+}
+
+.contact-info ul {
+	margin: 12px 32px;
+}
+
+/* Add New Section */
+.form-container {
+  display: none;
+  text-align: center;
+  margin-top: 1rem;
+}
+
 #current-date {
-  font-size: small;
-  text-align: right;
-  font-weight: 600;
-  padding: 10px 20px;
+	font-size: small;
+	text-align: right;
+	font-weight: 600;
+	padding: 10px 20px;
 }
 
 footer {
-  border: 2px solid gray;
-  box-sizing: border-box;
-  text-align: center;
-  height: 66px;
-  padding: 14px 0;
+	border: 2px solid gray;
+	box-sizing: border-box;
+	text-align: center;
+	height: 66px;
+}
+
+footer p {
+	margin: 12px 0;
+}
+
+footer a {
+	text-decoration: none;
+}
+footer img {
+	width: 1.8rem;
+	color: white;
+	margin: -4px 0 -6px 0;
+}
+
+@media screen and (min-width: 768px) {
+	nav ul {
+		font-size: 1.5rem;
+	}
+
+	.form-container {
+		display: none;
+		text-align: center;
+		margin-top: 1rem;
+	}
 }

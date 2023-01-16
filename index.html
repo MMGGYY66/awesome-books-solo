@@ -14,57 +14,65 @@
     <!-- header section -->
     <header>
       <nav>
-        <a href="index.html">
-          <div class="logo-container">
-            <figure>
-              <img src="./assets/images/logo.jpg" height="50px" alt="logo" />
-            </figure>
-            <p class="logo-text">AwesomeBooks</p>
-          </div>
-        </a>
         <ul>
-          <li class="listBtn">List</li>
-          <li class="add-new-btn">Add new</li>
-          <li class="contact">Contact</li>
+          <li>
+            <a href="index.html">
+              <div class="logo-container">
+                <figure>
+                  <img src="./assets/images/logo.jpg" height="50px" alt="logo" />
+                </figure>
+                <p class="logo-text">AwesomeBooks</p>
+              </div>
+            </a>
+          </li>
+
+          <li><button type="button" class="listBtn active" id="listBtn">List</button>
+          </li>
+
+          <li><button type="button" class="linkBtn add-new-btn" id="addNewBtn">Add New</button></li>
+
+          <li><button type="button" class="contact linkBtn" id="contactBtn">Contact</button></li>
         </ul>
       </nav>
     </header>
 
-    <section>
-      <div id="current-date"></div>
+    <div id="current-date" class="current-date"></div>
 
-      <!-- book list section -->
-      <section class="book-list-container">
-        <h1>Awesome books</h1>
-        <div id="book-list"></div>
-      </section>
+    <!-- book list section -->
+    <section class="book-list-container list" id="list">
+      <h1>Awesome books</h1>
+      <div id="book-list" class="collection"></div>
+    </section>
 
-      <!-- book form section -->
-      <section class="form-container">
-        <h2 class="add-text">Add a new book</h2>
-        <hr class="hr" />
+    <!-- book form section -->
+    <section class="form-container addNew" id="addNew">
+      <h2 class="add-text">Add a new book</h2>
+      <hr class="hr" />
+      <br />
+      <form id="book-form" class="book-input">
+        <label for="title"></label>
+        <input type="text" required placeholder="Title" class="bookTitle" id="title" />
         <br />
-        <form id="book-form">
-          <input type="text" required placeholder="Title" id="bookTitle" />
-          <br />
-          <input type="text" required placeholder="author" id="bookAuthor" />
-          <br />
-          <button id="add-button" type="submit"><strong>Add</strong></button>
-        </form>
-      </section>
 
-      <!-- contact section -->
-      <section class="contact-info">
-        <h2>Contact Information</h2>
-        <hr class="hr" />
-        <p>Do you have any questions or just you want to say "Hello"?</p>
-        <p>You can reach out to us!</p>
-        <ul>
-          <li>Our Email: mail@mail.com</li>
-          <li>Our Phone Number: +965 0123456789</li>
-          <li>Our Adress: Kuwait City, AlAssemah, Kuwait</li>
-        </ul>
-      </section>
+        <label for="author"></label>
+        <input type="text" required placeholder="author" class="bookAuthor" id="author" />
+        <br />
+
+        <button id="addBtn" class="add-button" type="button"><strong>Add</strong></button>
+      </form>
+    </section>
+
+    <!-- contact section -->
+    <section class="contact contact-info" id="contact">
+      <h2>Contact Information</h2>
+      <hr class="hr" />
+      <p>Do you have any questions or just you want to say "Hello"?</p>
+      <p>You can reach out to us!</p>
+      <ul>
+        <li>Our Email: mail@mail.com</li>
+        <li>Our Phone Number: +965 0123456789</li>
+        <li>Our Adress: Kuwait City, AlAssemah, Kuwait</li>
+      </ul>
     </section>
 
     <!-- Footer section -->
@@ -72,13 +80,13 @@
       <footer>
         <p>
           &copy;Copyright @2023 developed by
-          <a href="https://github.com/MMGGYY66" target="_blank"><strong>Mohamed</strong></a>
-          and
-          <a href="https://github.com/miltonHenschel" target="_blank"><strong>Henschel</strong>.</a>
+          <a href="https://github.com/MMGGYY66" target="_blank"><strong>Mohamed</strong>
+          <span><img src="./assets/images/github.svg" alt="github"></span></a>
         </p>
       </footer>
     </section>
   </main>
-  <script src="index.js" type="module" ></script>
+  <script src="index.js" type="module"></script>
 </body>
+
 </html>
