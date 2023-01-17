@@ -1,6 +1,6 @@
-# my-awesome-books
+# my-awesome-books-solo
 
-<p id="readme-top">My Microverse my-awesome-books project (Module two)</p>
+<p id="readme-top">My Microverse my-awesome-books-solo project (Module two)</p>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -88,17 +88,23 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-### Prerequisites
-
 - IDE to edit and run the code (We use Visual Studio Code 🔥).
 - Git to versionning your work.
 
 ### Install
+- first install package.json and node_modules run: 
+npm init -y
 
 - npm install --save-dev hint
 
+- npm install --save-dev stylelint@13.x stylelint-scss@3.x stylelint-config-standard@21.x stylelint-csstree-validator@1.x
+
+<!-- or latest version -->
 - npm install --save-dev stylelint stylelint-scss stylelint-config-standard stylelint-csstree-validator
 
+- npm install --save-dev eslint@7.x eslint-config-airbnb-base@14.x eslint-plugin-import@2.x babel-eslint@10.x
+
+<!-- or latest version -->
 - npm install --save-dev eslint  eslint-config-airbnb-base  eslint-plugin-import  babel-eslint
 
 ## Requirements
@@ -114,9 +120,22 @@ Clone the repository to get start with project, then make sure to install depend
 
 ### Run tests
 
-- run: npx hint .
-- run: npx stylelint "\*_/_.{css,scss}"
-- run: npx eslint .
+- to test and check the html file/s is error-free run: 
+npx hint . 
+
+- to fix errors run:
+npx hint . -f
+
+- to test and check the css file/s is error-free run: 
+npx stylelint "**/*.{css,scss}"
+- to fix errors run:
+npx stylelint "**/*.{css,scss}" --fix
+
+- to test and check the js file/s is error-free run: 
+npx eslint .
+
+- to fix errors run:
+npx eslint . --fix
 
 ### Deployment
 
