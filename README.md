@@ -177,8 +177,6 @@ Give a ⭐️ if you like this project!
 ## 🔭Acknowledgments <a name="acknowledgements"></a>
 
 - [Microverse Team](https://www.microverse.org/).
-- Spacial thank to [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) for his beautiful design.
-- Images uses in this project are from [figma](https://www.figma.com/file/V0vg37EZhAbP9nUPOeCy6p/HTML%2FCSS-%26-JavaScript-capstone-project---Conference-page?node-id=0%3A1&t=od5hoeaQE2tKg92Y-0).
 
 
 ## 📝 License <a name="license"></a>
