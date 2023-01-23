@@ -30,7 +30,7 @@ header {
   justify-content: space-between;
   align-items: center;
   border: 3px solid black;
-  padding: 1rem 0.5rem;
+  padding: 1.1rem 0.6rem;
   width: 100%;
 }
 
@@ -59,7 +59,7 @@ h2 {
   width: fit-content;
   display: flex;
   align-items: center;
-  padding: 13px;
+  padding: 14px;
   margin: 0;
   gap: 0;
 }
