@@ -43,7 +43,8 @@
 
 - [Live Demo Link]()
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-# [live demo](https://mmggyy66.github.io/awesome-books-solo/)
+# [link to my-awesome-books-solo: ](https://mmggyy66.github.io/awesome-books-solo/)
+
 ## 👁 Presentation <a name="presentation"></a>
 
 - [Loom presentation Link]()
@@ -76,7 +77,7 @@ Re-create my Awesome books app following the rules:
 
 ## Deploy my website with github pages":
 
-# [link to my-awesome-books: ](https://mmggyy66.github.io/awesome-books-solo/)
+# [link to my-awesome-books-solo: ](https://mmggyy66.github.io/awesome-books-solo/)
 
 
 ## - Loom video link:
