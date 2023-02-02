@@ -40,10 +40,9 @@
 ### Tech Stack <a name="tech-stack"></a>
 
 ## 🚀 Live Demo <a name="live-demo"></a>
+[link to my-awesome-books-solo: ](https://mmggyy66.github.io/awesome-books-solo/)
 
-- [Live Demo Link]()
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-# [link to my-awesome-books-solo: ](https://mmggyy66.github.io/awesome-books-solo/)
 
 ## 👁 Presentation <a name="presentation"></a>
 
